@@ -15,70 +15,53 @@
   <meta name="keywords" content="Anri Nobel, Full Stack Developer, ASP.NET Core, Angular, React, SQL Server, Web Developer Bandung" />
   <link rel="stylesheet" href="index.css" />
   <style>
-    body {
-      font-family: "Segoe UI", Tahoma, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
+  /* Biar gambar lebih kecil tapi tetap di sisi kanan */
+  .work__image-box img {
+    max-width: 180px; /* kecilin ukuran gambar */
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+  }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2rem;
-      color: #1f2937;
-    }
+  /* Rapihin text */
+  .work__text h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #ef4444;
+  }
 
-    .work__box {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-      margin-bottom: 25px;
-      padding: 20px;
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-    }
+  .work__text p {
+    margin: 5px 0 15px;
+    font-weight: 600;
+    color: #374151;
+  }
 
-    .work__box img {
-      width: 180px;
-      border-radius: 8px;
-    }
+  /* List kerja */
+  .work__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
 
-    .work__text h3 {
-      margin: 0;
-      color: #ef4444;
-    }
+  .work__list li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 26px;
+    line-height: 1.5;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
 
-    .work__text p {
-      font-weight: bold;
-      margin: 5px 0 15px;
-    }
+  .work__list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #10b981; /* hijau emerald */
+    font-weight: bold;
+  }
+</style>
 
-    /* Work List Styling */
-    .work__text ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-
-    .work__text ul li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 28px;
-      line-height: 1.5;
-    }
-
-    .work__text ul li::before {
-      content: "✔";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: #10b981; /* hijau emerald */
-      font-weight: bold;
-    }
-  </style>
 </head>
 
 <body>
