@@ -9,23 +9,17 @@
   <title>Anri Nobel | Senior Full Stack Developer</title>
 
   <meta name="description" content="Portfolio of Anri Nobel, a Senior Full Stack Developer specializing in .NET 8, React, and Cloud Architecture.">
-  <meta name="keywords" content="Anri Nobel, Full Stack Developer, .NET 8, ASP.NET Core, React, AWS Lambda, Azure AD" />
   <link rel="stylesheet" href="index.css" />
   <style>
-    /* Custom Styling for Senior Look */
     .work__image-box img {
       max-width: 345px;
-      height: auto;
+      height: 200px; /* Kasih height biar konsisten kalau gambar kosong */
       border-radius: 6px;
       object-fit: cover;
+      background-color: #222; /* Background gelap kalau gambar belum loading */
     }
 
-    .work__text h3 {
-      margin: 0;
-      font-size: 2.3rem;
-      color: #ef4444;
-    }
-
+    .work__text h3 { margin: 0; font-size: 2.3rem; color: #ef4444; }
     .work__text p {
       margin: 5px 0 15px;
       font-weight: 600;
@@ -38,12 +32,7 @@
       border: 1px solid #ff3258;
     }
 
-    .work__list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-
+    .work__list { list-style: none; padding-left: 0; margin: 0; }
     .work__list li {
       position: relative;
       margin-bottom: 8px;
@@ -52,21 +41,15 @@
       color: #ffffff;
       font-size: 1.9rem;
     }
-
     .work__list li::before {
       content: "✔";
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 0; top: 0;
       color: #10b981;
       font-weight: bold;
     }
 
-    /* Category Filter */
-    .filter-container {
-      margin-bottom: 50px;
-      text-align: center;
-    }
+    .filter-container { margin-bottom: 50px; text-align: center; }
     .filter-btn {
       background: transparent;
       border: 1px solid #ff3258;
@@ -75,27 +58,17 @@
       margin: 5px;
       cursor: pointer;
       transition: 0.3s;
-      font-family: 'Jost', sans-serif;
     }
-    .filter-btn.active, .filter-btn:hover {
-      background: #ff3258;
-    }
-    .work__box.hidden {
-      display: none;
-    }
-
-    /* Contact Button Styling */
-    .contact__container {
-      margin-top: 4rem;
-      text-align: left;
-    }
+    .filter-btn.active, .filter-btn:hover { background: #ff3258; }
+    .work__box.hidden { display: none; }
+    .contact__container { margin-top: 4rem; }
   </style>
 </head>
 
 <body>
-  <header class="header" role="banner" id="top">
+  <header class="header" id="top">
     <div class="row">
-      <nav class="nav" role="navigation">
+      <nav class="nav">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
@@ -105,20 +78,17 @@
     </div>
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Anri Nobel</span>
-        </h1>
+        <h1 class="heading-primary"><span>Anri Nobel</span></h1>
         <p>Senior Full Stack Developer</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
-  <main role="main">
+  <main>
     <section class="work" id="work">
       <div class="row">
         <h2>My Work</h2>
-        
         <div class="filter-container">
           <button class="filter-btn active" onclick="filterSelection('all')">All Projects</button>
           <button class="filter-btn" onclick="filterSelection('enterprise')">Enterprise/Real Work</button>
@@ -130,16 +100,15 @@
           <div class="work__box enterprise">
             <div class="work__text">
               <h3>MahaDasha Group - VPMS</h3>
-              <p>Full Stack Developer (2025 - Present)</p>
+              <p>Full Stack Developer (2025)</p>
               <ul class="work__list">
-                <li>Architected Vendor Performance Management System using .NET 8 Clean Architecture.</li>
-                <li>Built React 18 SPA with TypeScript, Zustand, and React Query.</li>
-                <li>Implemented serverless backend via AWS Lambda and secure S3 storage.</li>
-                <li>Integrated Azure AD (Microsoft Identity Platform) for secure authentication.</li>
+                <li>Architected VPMS using .NET 8 Clean Architecture.</li>
+                <li>Built React 18 SPA with TypeScript and Zustand.</li>
+                <li>Deployed serverless via AWS Lambda.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/vpms.png" class="work__image" alt="VPMS Project" />
+              <img src="./images/vpms.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=.NET+8+VPMS'" alt="VPMS" />
             </div>
           </div>
 
@@ -148,29 +117,26 @@
               <h3>BPJS Kesehatan</h3>
               <p>Programmer (2025)</p>
               <ul class="work__list">
-                <li>Developed health service management web apps using ASP.NET Core and Angular.</li>
-                <li>Implemented Entity Framework Core for structured SQL Server management.</li>
-                <li>Built secure authentication and authorization features using JWT.</li>
-                <li>Optimized database queries for high-performance reliability.</li>
+                <li>Developed health service management with ASP.NET Core & Angular.</li>
+                <li>SQL Server & Entity Framework Core optimization.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/bpjs.png" class="work__image" alt="BPJS Project" />
+              <img src="./images/bpjs.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=BPJS+Project'" alt="BPJS" />
             </div>
           </div>
 
           <div class="work__box senior-portfolio">
             <div class="work__text">
-              <h3>Enterprise SaaS Project Engine</h3>
+              <h3>SaaS Project Engine</h3>
               <p>Senior Architect (Portfolio)</p>
               <ul class="work__list">
-                <li>Implemented "Separate Schema per Tenant" for 100% data isolation.</li>
-                <li>Built using .NET 8, Redis Caching, and PostgreSQL.</li>
-                <li>Designed complex Kanban workflows with real-time state management.</li>
+                <li>Multi-tenant isolation strategy with Separate Schemas.</li>
+                <li>Redis caching and DDD principles.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/saas-dashboard.png" class="work__image" alt="SaaS Dashboard" />
+              <img src="./images/saas.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=SaaS+Architecture'" alt="SaaS" />
             </div>
           </div>
 
@@ -179,28 +145,12 @@
               <h3>Transcosmos Indonesia</h3>
               <p>Web Administrator</p>
               <ul class="work__list">
-                <li>Analysed traffic via Google Analytics to optimize digital content strategies.</li>
-                <li>Led website redesigns for better responsive engagement and accessibility.</li>
-                <li>Streamlined patch development, system upgrades, and disaster recovery.</li>
+                <li>Google Analytics traffic strategy.</li>
+                <li>Disaster recovery and system upgrades.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/TCID.png" class="work__image" alt="Transcosmos Project" />
-            </div>
-          </div>
-
-          <div class="work__box senior-portfolio">
-            <div class="work__text">
-              <h3>AI-Driven Financial Fraud Monitor</h3>
-              <p>Solutions Architect (Portfolio)</p>
-              <ul class="work__list">
-                <li>Integrated .NET backend with Python-based ML services for fraud detection.</li>
-                <li>Utilized AWS Lambda for serverless, event-driven log processing.</li>
-                <li>Implemented Circuit Breaker patterns with Polly for extreme resilience.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/fraud-ai.png" class="work__image" alt="Fraud Detection" />
+              <img src="./images/tcid.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Transcosmos'" alt="TCID" />
             </div>
           </div>
 
@@ -209,46 +159,16 @@
               <h3>Independent Freelancer</h3>
               <p>Full Stack Developer</p>
               <ul class="work__list">
-                <li>Built responsive web interfaces with Angular/React and dynamic UI.</li>
-                <li>Developed ASP.NET Core APIs and cross-platform mobile apps (React Native).</li>
-                <li>Delivered high-performance solutions with secure authentication and sync.</li>
+                <li>React Native Mobile Apps development.</li>
+                <li>Cross-platform real-time data sync.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/freelancer.png" class="work__image" alt="Freelancer Projects" />
+              <img src="./images/freelance.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Freelance+Work'" alt="Freelance" />
             </div>
           </div>
-
-          <div class="work__box freelance">
-            <div class="work__text">
-              <h3>AL Group Creative</h3>
-              <p>Full Stack Developer</p>
-              <ul class="work__list">
-                <li>Created innovative multimedia websites with animations and audio displays.</li>
-                <li>Optimised visuals and performance via refactoring and caching.</li>
-                <li>Extensive TypeScript usage for maintainable and scalable code.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/ALgroup.png" class="work__image" alt="AL Group Project" />
-            </div>
+          
           </div>
-
-          <div class="work__box senior-portfolio">
-            <div class="work__text">
-              <h3>High-Performance E-Commerce API</h3>
-              <p>Fintech Portfolio</p>
-              <ul class="work__list">
-                <li>Developed REST API with PostgreSQL and Redis for 5GB+ asset handling.</li>
-                <li>Implemented idempotent API design for secure payment gateway integration.</li>
-                <li>Optimized order processing and product management workflows.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/ecommerce-api.png" class="work__image" alt="E-commerce API" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -257,16 +177,11 @@
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <p>
-              I am a <strong>Senior Full Stack Developer</strong> with over 8 years of experience in the industry. I specialize in building scalable applications using <strong>.NET 8, React 18, and Cloud Infrastructure</strong>.
-            </p>
-            <p>
-              Graduated from <strong>Universitas Komputer Indonesia (UNIKOM)</strong> in 2020, I have a proven track record of delivering enterprise-level systems, including <strong>VPMS</strong> and health service management platforms for <strong>BPJS Kesehatan</strong>.
-            </p>
+            <p>I am a <strong>Senior Full Stack Developer</strong> with 8+ years of experience. Graduated from <strong>UNIKOM</strong> in 2020.</p>
             <a href="./images/CV_Anri_Nobel_Ibrahim.pdf" class="btn">My Resume</a>
           </div>
           <div class="about__photo-container">
-            <img class="about__photo" src="./images/AnriNobel.jpg" alt="Anri Nobel" width="500px" />
+            <img src="./images/AnriNobel.jpg" onerror="this.src='https://placehold.co/500x550/222/ffffff?text=Anri+Nobel'" alt="Anri Nobel" width="500px" />
           </div>
         </div>
       </div>
@@ -276,53 +191,25 @@
       <div class="row">
         <h2>Get in Touch</h2>
         <div class="contact__info">
-          <p>
-            Ready to scale your next enterprise application or need a consultation on .NET architecture? 
-            Feel free to reach out. I'm always open to discussing new projects or creative ideas.
-          </p>
-          
+          <p>Ready to scale your next enterprise application? Let's discuss your project.</p>
           <div class="contact__container">
-            <a href="mailto:anri.nobel@gmail.com?subject=Project Inquiry - Senior Full Stack Developer&body=Hi Anri, I would like to discuss a project with you..." 
-               class="btn btn--pink" 
-               style="text-decoration: none;">
-              Send Message via Email
-            </a>
-          </div>
-
-          <div style="margin-top: 2rem;">
-            <a href="mailto:anri.nobel@gmail.com" class="link__text">anri.nobel@gmail.com</a>
+            <a href="mailto:anri.nobel@gmail.com?subject=Project Inquiry" class="btn btn--pink">Send Message via Email</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item"><a href="https://github.com/AnriNobel"><img src="./images/github.svg" class="footer__social-image" alt="Github"></a></li>
-        <li class="footer__social-link-item"><a href="https://www.linkedin.com/in/anrinobel/"><img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin"></a></li>
-      </ul>
-      <p>&copy; 2026 - Anri Nobel Ibrahim.</p>
-    </div>
-  </footer>
-
   <script>
     function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("work__box");
+      var x = document.getElementsByClassName("work__box");
       if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
+      for (var i = 0; i < x.length; i++) {
         x[i].classList.add("hidden");
-        if (x[i].className.indexOf(c) > -1) {
-          x[i].classList.remove("hidden");
-        }
+        if (x[i].className.indexOf(c) > -1) x[i].classList.remove("hidden");
       }
-      
       var btns = document.getElementsByClassName("filter-btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].classList.remove("active");
-      }
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove("active");
       event.currentTarget.classList.add("active");
     }
   </script>
