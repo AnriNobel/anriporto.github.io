@@ -11,6 +11,7 @@
   <meta name="description" content="Portfolio of Anri Nobel, a Senior Full Stack Developer specializing in .NET 8, React, and Cloud Architecture.">
   <link rel="stylesheet" href="index.css" />
   <style>
+    /* Styling agar seragam & senior look */
     .work__image-box img {
       max-width: 345px;
       height: 220px;
@@ -90,25 +91,85 @@
       <div class="row">
         <h2>My Work</h2>
         <div class="filter-container">
-          <button class="filter-btn active" onclick="filterSelection('all')">All Projects</button>
-          <button class="filter-btn" onclick="filterSelection('enterprise')">Enterprise/Real Work</button>
-          <button class="filter-btn" onclick="filterSelection('senior-portfolio')">Senior Portfolio</button>
+          <button class="filter-btn active" onclick="filterSelection('all')">All Experience</button>
+          <button class="filter-btn" onclick="filterSelection('enterprise')">Company Experience</button>
+          <button class="filter-btn" onclick="filterSelection('senior-portfolio')">Architecture Portfolio</button>
           <button class="filter-btn" onclick="filterSelection('freelance')">Freelance & Creative</button>
         </div>
 
         <div class="work__boxes">
+          
           <div class="work__box enterprise">
             <div class="work__text">
               <h3>MahaDasha Group - VPMS</h3>
               <p>Full Stack Developer (2025)</p>
               <ul class="work__list">
-                <li>Architected VPMS using .NET 8 Clean Architecture[cite: 9, 16].</li>
-                <li>Built React 18 SPA with TypeScript and Zustand[cite: 9, 17].</li>
-                <li>Deployed serverless via AWS Lambda and S3[cite: 9, 18].</li>
+                <li>Architected VPMS using .NET 8 Clean Architecture. [cite: 9]</li>
+                <li>Built React 18 SPA with TypeScript and Zustand. [cite: 9]</li>
+                <li>Deployed serverless via AWS Lambda and S3. [cite: 9]</li>
               </ul>
             </div>
             <div class="work__image-box">
               <img src="./images/vpms.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=VPMS+Architecture'" />
+            </div>
+          </div>
+
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>BPJS Kesehatan</h3>
+              <p>Programmer (2025)</p>
+              <ul class="work__list">
+                <li>Developed health service management with ASP.NET Core & Angular. [cite: 9]</li>
+                <li>Implemented Entity Framework Core for SQL Server management. [cite: 9]</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/bpjs.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=BPJS+Kesehatan'" />
+            </div>
+          </div>
+
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>Transcosmos Indonesia</h3>
+              <p>Web Administrator</p>
+              <ul class="work__list">
+                <li>Analyzed traffic via Google Analytics to inform content strategies. [cite: 32]</li>
+                <li>Led website redesigns for better accessibility and visitor engagement. [cite: 33]</li>
+                <li>Managed backups and disaster recovery procedures. [cite: 35]</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/TCID.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Transcosmos+Indonesia'" />
+            </div>
+          </div>
+
+          <div class="work__box freelance">
+            <div class="work__text">
+              <h3>Full Stack Freelancer</h3>
+              <p>Web & Mobile Developer</p>
+              <ul class="work__list">
+                <li>Built responsive web interfaces with Angular/React. [cite: 41]</li>
+                <li>Created cross-platform mobile apps using React Native. [cite: 43]</li>
+                <li>Developed ASP.NET Core APIs integrated with SQL Server. [cite: 42]</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/freelance.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Freelance+Projects'" />
+            </div>
+          </div>
+
+          <div class="work__box freelance">
+            <div class="work__text">
+              <h3>AL Group Creative</h3>
+              <p>Full Stack Developer</p>
+              <ul class="work__list">
+                <li>Planned websites to showcase multimedia with animations and audio. [cite: 48]</li>
+                <li>Boosted performance via code refactoring and caching. [cite: 48]</li>
+                <li>Extensive TypeScript usage for maintainable code. [cite: 48]</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/ALgroup.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=AL+Group+Creative'" />
             </div>
           </div>
 
@@ -122,21 +183,7 @@
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/saas.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=SaaS+Project+Engine'" />
-            </div>
-          </div>
-
-          <div class="work__box enterprise">
-            <div class="work__text">
-              <h3>BPJS Kesehatan</h3>
-              <p>Programmer (2025)</p>
-              <ul class="work__list">
-                <li>Developed health service management with ASP.NET Core & Angular[cite: 9].</li>
-                <li>Implemented Entity Framework Core for structured SQL Server management[cite: 9, 19].</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/bpjs.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=BPJS+Kesehatan'" />
+              <img src="./images/saas.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=SaaS+Architecture'" />
             </div>
           </div>
 
@@ -154,20 +201,6 @@
             </div>
           </div>
 
-          <div class="work__box enterprise">
-            <div class="work__text">
-              <h3>Transcosmos Indonesia</h3>
-              <p>Web Administrator</p>
-              <ul class="work__list">
-                <li>Analyzed traffic via Google Analytics to optimize content strategies[cite: 32].</li>
-                <li>Led website redesigns for better accessibility and visitor engagement[cite: 33].</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/tcid.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Transcosmos+Indo'" />
-            </div>
-          </div>
-
           <div class="work__box senior-portfolio">
             <div class="work__text">
               <h3>Serverless Video Transcoder</h3>
@@ -182,20 +215,6 @@
             </div>
           </div>
 
-          <div class="work__box freelance">
-            <div class="work__text">
-              <h3>Full Stack Freelancer</h3>
-              <p>Web & Mobile Developer</p>
-              <ul class="work__list">
-                <li>Built cross-platform mobile apps using React Native[cite: 43].</li>
-                <li>Developed ASP.NET Core APIs integrated with SQL Server[cite: 42].</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/freelance.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Freelance+Portfolio'" />
-            </div>
-          </div>
-
           <div class="work__box senior-portfolio">
             <div class="work__text">
               <h3>Unified Identity Proxy</h3>
@@ -207,20 +226,6 @@
             </div>
             <div class="work__image-box">
               <img src="./images/iam.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=IAM+Security+Proxy'" />
-            </div>
-          </div>
-
-          <div class="work__box freelance">
-            <div class="work__text">
-              <h3>AL Group Creative</h3>
-              <p>Full Stack Developer</p>
-              <ul class="work__list">
-                <li>Created multimedia websites with animations and audio displays[cite: 48].</li>
-                <li>Optimized performance via code refactoring and caching[cite: 48].</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/algroup.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=AL+Group+Creative'" />
             </div>
           </div>
 
@@ -243,8 +248,8 @@
               <h3>E-Commerce Backend API</h3>
               <p>Portfolio Project</p>
               <ul class="work__list">
-                <li>REST API with product management and payment gateway[cite: 70, 73].</li>
-                <li>Integrated Redis and PostgreSQL for performance[cite: 70].</li>
+                <li>REST API with product management and payment gateway. [cite: 70]</li>
+                <li>Integrated Redis and PostgreSQL for performance. [cite: 70]</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -265,6 +270,7 @@
               <img src="./images/fhir.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=FHIR+Health+Tech'" />
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -274,8 +280,8 @@
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <p>I am a <strong>Senior Full Stack Developer</strong> with 8+ years of experience. Graduated from <strong>UNIKOM</strong> in 2020[cite: 14].</p>
-            <p>Expert in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>[cite: 5, 16, 17]. Proven track record in <strong>Clean Architecture</strong> and serverless AWS Lambda[cite: 4, 5, 9].</p>
+            <p>I am a <strong>Senior Full Stack Developer</strong> with 8+ years of experience. Graduated from <strong>UNIKOM</strong> in 2020.</p>
+            <p>Expert in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>. Proven track record in <strong>Clean Architecture</strong> and serverless AWS Lambda. [cite: 4, 5]</p>
             <a href="./images/CV_Anri_Nobel_Ibrahim.pdf" class="btn">My Resume</a>
           </div>
           <div class="about__photo-container">
