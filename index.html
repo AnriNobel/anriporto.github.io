@@ -13,10 +13,10 @@
   <style>
     .work__image-box img {
       max-width: 345px;
-      height: 200px; /* Kasih height biar konsisten kalau gambar kosong */
+      height: 220px;
       border-radius: 6px;
       object-fit: cover;
-      background-color: #222; /* Background gelap kalau gambar belum loading */
+      background-color: #1a1a1a;
     }
 
     .work__text h3 { margin: 0; font-size: 2.3rem; color: #ef4444; }
@@ -102,13 +102,27 @@
               <h3>MahaDasha Group - VPMS</h3>
               <p>Full Stack Developer (2025)</p>
               <ul class="work__list">
-                <li>Architected VPMS using .NET 8 Clean Architecture.</li>
-                <li>Built React 18 SPA with TypeScript and Zustand.</li>
-                <li>Deployed serverless via AWS Lambda.</li>
+                <li>Architected VPMS using .NET 8 Clean Architecture[cite: 9, 16].</li>
+                <li>Built React 18 SPA with TypeScript and Zustand[cite: 9, 17].</li>
+                <li>Deployed serverless via AWS Lambda and S3[cite: 9, 18].</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/vpms.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=.NET+8+VPMS'" alt="VPMS" />
+              <img src="./images/vpms.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=VPMS+Architecture'" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
+              <h3>Enterprise SaaS Engine</h3>
+              <p>Senior Architect</p>
+              <ul class="work__list">
+                <li>Multi-tenant strategy with Separate Schemas for data isolation.</li>
+                <li>Optimized high-performance APIs using Redis and .NET 8.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/saas.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=SaaS+Project+Engine'" />
             </div>
           </div>
 
@@ -117,26 +131,26 @@
               <h3>BPJS Kesehatan</h3>
               <p>Programmer (2025)</p>
               <ul class="work__list">
-                <li>Developed health service management with ASP.NET Core & Angular.</li>
-                <li>SQL Server & Entity Framework Core optimization.</li>
+                <li>Developed health service management with ASP.NET Core & Angular[cite: 9].</li>
+                <li>Implemented Entity Framework Core for structured SQL Server management[cite: 9, 19].</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/bpjs.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=BPJS+Project'" alt="BPJS" />
+              <img src="./images/bpjs.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=BPJS+Kesehatan'" />
             </div>
           </div>
 
           <div class="work__box senior-portfolio">
             <div class="work__text">
-              <h3>SaaS Project Engine</h3>
-              <p>Senior Architect (Portfolio)</p>
+              <h3>AI-Driven Fraud Monitor</h3>
+              <p>Solutions Architect</p>
               <ul class="work__list">
-                <li>Multi-tenant isolation strategy with Separate Schemas.</li>
-                <li>Redis caching and DDD principles.</li>
+                <li>Integrated .NET 8 with Python ML services for real-time detection.</li>
+                <li>Event-driven architecture using AWS Lambda and PostgreSQL.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/saas.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=SaaS+Architecture'" alt="SaaS" />
+              <img src="./images/fraud.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=AI+Fraud+Detection'" />
             </div>
           </div>
 
@@ -145,30 +159,113 @@
               <h3>Transcosmos Indonesia</h3>
               <p>Web Administrator</p>
               <ul class="work__list">
-                <li>Google Analytics traffic strategy.</li>
-                <li>Disaster recovery and system upgrades.</li>
+                <li>Analyzed traffic via Google Analytics to optimize content strategies[cite: 32].</li>
+                <li>Led website redesigns for better accessibility and visitor engagement[cite: 33].</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/tcid.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Transcosmos'" alt="TCID" />
+              <img src="./images/tcid.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Transcosmos+Indo'" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
+              <h3>Serverless Video Transcoder</h3>
+              <p>Cloud Engineer</p>
+              <ul class="work__list">
+                <li>Automated watermarking using AWS Lambda trigger events.</li>
+                <li>Secured delivery via CloudFront Signed URLs.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/video.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Cloud+Video+Engine'" />
             </div>
           </div>
 
           <div class="work__box freelance">
             <div class="work__text">
-              <h3>Independent Freelancer</h3>
-              <p>Full Stack Developer</p>
+              <h3>Full Stack Freelancer</h3>
+              <p>Web & Mobile Developer</p>
               <ul class="work__list">
-                <li>React Native Mobile Apps development.</li>
-                <li>Cross-platform real-time data sync.</li>
+                <li>Built cross-platform mobile apps using React Native[cite: 43].</li>
+                <li>Developed ASP.NET Core APIs integrated with SQL Server[cite: 42].</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/freelance.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Freelance+Work'" alt="Freelance" />
+              <img src="./images/freelance.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Freelance+Portfolio'" />
             </div>
           </div>
-          
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
+              <h3>Unified Identity Proxy</h3>
+              <p>Security Architect</p>
+              <ul class="work__list">
+                <li>Centralized OIDC auth for enterprise apps using Azure AD.</li>
+                <li>Custom middleware for fine-grained RBAC in .NET 8.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/iam.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=IAM+Security+Proxy'" />
+            </div>
           </div>
+
+          <div class="work__box freelance">
+            <div class="work__text">
+              <h3>AL Group Creative</h3>
+              <p>Full Stack Developer</p>
+              <ul class="work__list">
+                <li>Created multimedia websites with animations and audio displays[cite: 48].</li>
+                <li>Optimized performance via code refactoring and caching[cite: 48].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/algroup.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=AL+Group+Creative'" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
+              <h3>Omni-Channel WMS</h3>
+              <p>Senior Backend Developer</p>
+              <ul class="work__list">
+                <li>Real-time tracking handling 10k+ SKU updates via SignalR.</li>
+                <li>RabbitMQ integration for resilient message queuing.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/wms.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=Logistics+WMS'" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
+              <h3>E-Commerce Backend API</h3>
+              <p>Portfolio Project</p>
+              <ul class="work__list">
+                <li>REST API with product management and payment gateway[cite: 70, 73].</li>
+                <li>Integrated Redis and PostgreSQL for performance[cite: 70].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/ecommerce.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=E-Commerce+API'" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
+              <h3>HL7 FHIR Platform</h3>
+              <p>Health-Tech Architect</p>
+              <ul class="work__list">
+                <li>Interoperable health data platform using FHIR standards.</li>
+                <li>AES-256 encryption for patient EHR data security.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/fhir.png" onerror="this.src='https://placehold.co/400x250/222/ef4444?text=FHIR+Health+Tech'" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -177,7 +274,8 @@
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <p>I am a <strong>Senior Full Stack Developer</strong> with 8+ years of experience. Graduated from <strong>UNIKOM</strong> in 2020.</p>
+            <p>I am a <strong>Senior Full Stack Developer</strong> with 8+ years of experience. Graduated from <strong>UNIKOM</strong> in 2020[cite: 14].</p>
+            <p>Expert in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>[cite: 5, 16, 17]. Proven track record in <strong>Clean Architecture</strong> and serverless AWS Lambda[cite: 4, 5, 9].</p>
             <a href="./images/CV_Anri_Nobel_Ibrahim.pdf" class="btn">My Resume</a>
           </div>
           <div class="about__photo-container">
