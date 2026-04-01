@@ -6,79 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!-- Put your site title here -->
-  <title>
-    Anri Nobel | Full Stack Developer.
-  </title>
+  <title>Anri Nobel | Senior Full Stack Developer</title>
 
-  <meta name="description" content="Portfolio of Anri Nobel, a Full Stack Developer with experience in ASP.NET Core, Angular, React, SQL, and mobile app development.">
-  <meta name="keywords" content="Anri Nobel, Full Stack Developer, ASP.NET Core, Angular, React, SQL Server, Web Developer Bandung" />
+  <meta name="description" content="Portfolio of Anri Nobel, a Senior Full Stack Developer specializing in .NET 8, React, and Cloud Architecture.">
+  <meta name="keywords" content="Anri Nobel, Full Stack Developer, .NET 8, ASP.NET Core, React, AWS Lambda, Azure AD" />
   <link rel="stylesheet" href="index.css" />
   <style>
-  /* Biar gambar lebih kecil tapi tetap di sisi kanan */
-  .work__image-box img {
-    max-width: 345px; /* kecilin ukuran gambar */
-    height: auto;
-    border-radius: 6px;
-    object-fit: cover;
-  }
+    .work__image-box img {
+      max-width: 345px;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
 
-  /* Rapihin text */
-  .work__text h3 {
-    margin: 0;
-    font-size: 2.3rem;
-    color: #ef4444;
-  }
+    .work__text h3 {
+      margin: 0;
+      font-size: 2.3rem;
+      color: #ef4444;
+    }
 
-  .work__text p {
-    margin: 5px 0 15px;
-    font-weight: 600;
-    color: #ffffff;
-  }
+    .work__text p {
+      margin: 5px 0 15px;
+      font-weight: 600;
+      color: #ffffff;
+      display: inline-block;
+      background: rgba(255, 50, 88, 0.1);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 1.4rem;
+      border: 1px solid #ff3258;
+    }
 
-  /* List kerja */
-  .work__list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
+    .work__list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
 
-  .work__list li {
-    position: relative;
-    margin-bottom: 8px;
-    padding-left: 26px;
-    line-height: 1.5;
-    color: #ffffff;
-    font-size: 1.9rem;
-  }
+    .work__list li {
+      position: relative;
+      margin-bottom: 8px;
+      padding-left: 26px;
+      line-height: 1.5;
+      color: #ffffff;
+      font-size: 1.9rem;
+    }
 
-  .work__list li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #10b981; /* hijau emerald */
-    font-weight: bold;
-  }
-</style>
+    .work__list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
 
+    /* Filter Styles */
+    .filter-container {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .filter-btn {
+      background: transparent;
+      border: 1px solid #ff3258;
+      color: white;
+      padding: 8px 20px;
+      margin: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: #ff3258;
+    }
+    .work__box.hidden {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-
-  <!-- ***** Header ***** -->
-
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -87,111 +100,170 @@
         <h1 class="heading-primary">
           <span>Anri Nobel</span>
         </h1>
-        <p>Full Stack Developer </p>
+        <p>Senior Full Stack Developer</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
-
-    <!-- ***** Work ***** -->
-
     <section class="work" id="work">
       <div class="row">
         <h2>My Work</h2>
+        
+        <div class="filter-container">
+          <button class="filter-btn active" onclick="filterSelection('all')">All Projects</button>
+          <button class="filter-btn" onclick="filterSelection('enterprise')">Enterprise/SaaS</button>
+          <button class="filter-btn" onclick="filterSelection('cloud')">Cloud/DevOps</button>
+          <button class="filter-btn" onclick="filterSelection('realtime')">Real-time/Fintech</button>
+        </div>
+
         <div class="work__boxes">
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>MahaDasha Group - VPMS</h3>
+              <p>Full Stack Developer (2025)</p>
+              <ul class="work__list">
+                <li>Developed a Vendor Performance Management System (VPMS) using .NET 8 with Clean Architecture[cite: 9, 54].</li>
+                <li>Built a modern SPA frontend using React 18, TypeScript, and TailwindCSS[cite: 9, 55].</li>
+                <li>Implemented serverless backend via AWS Lambda and S3 for secure storage[cite: 9, 55].</li>
+                <li>Integrated Azure AD for secure JWT-based authentication[cite: 9, 55].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/vpms.png" class="work__image" alt="VPMS Project" />
+            </div>
+          </div>
 
-          <div class="work__box">
-        <div class="work__text">
-          <h3>MahaDasha Group - VPMS</h3>
-          <p>Full Stack Developer (2025)</p>
-          <ul class="work__list">
-            <li>Developed a Vendor Performance Management System (VPMS) using .NET 8 with Clean Architecture.</li>
-            <li>Built a modern SPA frontend using React 18, TypeScript, and TailwindCSS, managed with Zustand and React Query.</li>
-            <li>Implemented a serverless backend deployed via AWS Lambda and used AWS S3 for secure file attachment storage.</li>
-            <li>Integrated Azure AD (Microsoft Identity Platform) for secure JWT-based authentication.</li>
-            <li>Developed a multi-level approval workflow involving Requesters, Reviewers, VPM Specialists, and Approvers.</li>
-            <li>Created a custom PDF export feature using jsPDF for official evaluation reports with digital signature support.</li>
-            <li>Optimized data filtering for business subfields and improved system stability through extensive bug fixes.</li>
-          </ul>
-        </div>
-        <div class="work__image-box">
-          <img src="./images/vpms.png" class="work__image" alt="VPMS Project Dashboard" />
-        </div>
-      </div>
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>Enterprise SaaS Project Engine</h3>
+              <p>Senior Architect (Portfolio)</p>
+              <ul class="work__list">
+                <li>Implemented "Separate Schema per Tenant" strategy for 100% data isolation.</li>
+                <li>Architected using .NET 8 following Clean Architecture and DDD principles[cite: 5, 16].</li>
+                <li>Reduced API latency by 40% using Redis distributed caching[cite: 19].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/saas-dashboard.png" class="work__image" alt="SaaS Dashboard" />
+            </div>
+          </div>
 
-          <!-- BPJS Kesehatan -->
-          <div class="work__box">
+          <div class="work__box realtime">
+            <div class="work__text">
+              <h3>AI-Driven Financial Fraud Monitor</h3>
+              <p>Solutions Architect (Portfolio)</p>
+              <ul class="work__list">
+                <li>Integrated ASP.NET Core with Python-based ML services for real-time detection.</li>
+                <li>Utilized AWS Lambda for event-driven processing of transaction logs[cite: 18].</li>
+                <li>Implemented Circuit Breaker patterns with Polly for 99.9% availability.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/fraud-ai.png" class="work__image" alt="Fraud Detection" />
+            </div>
+          </div>
+
+          <div class="work__box cloud">
+            <div class="work__text">
+              <h3>Cloud-Native Video Processing Engine</h3>
+              <p>Cloud Engineer (Portfolio)</p>
+              <ul class="work__list">
+                <li>Built serverless media pipeline using AWS Lambda and S3 Trigger events[cite: 18].</li>
+                <li>Secured content delivery using CloudFront Signed URLs and OAI.</li>
+                <li>Automated multi-resolution transcoding for enterprise assets.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/cloud-video.png" class="work__image" alt="Video Engine" />
+            </div>
+          </div>
+
+          <div class="work__box enterprise">
             <div class="work__text">
               <h3>BPJS Kesehatan</h3>
               <p>Programmer (2025)</p>
               <ul class="work__list">
-                <li>Developed web applications for health service management using ASP.NET Core Web API and Angular.</li>
-                <li>Implemented Entity Framework Core for structured database management in SQL Server.</li>
-                <li>Built secure authentication and authorization features using JWT.</li>
-                <li>Optimized database queries, improving system performance and reliability.</li>
-                <li>Maintained and enhanced existing web and mobile applications to meet evolving business requirements.</li>
+                <li>Developed health service management web apps using ASP.NET Core and Angular[cite: 9, 66].</li>
+                <li>Implemented Entity Framework Core for SQL Server management[cite: 9, 66].</li>
+                <li>Optimized database queries, improving reliability and performance[cite: 9, 68].</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/bpjs.png" class="work__image" alt="BPJS Kesehatan Project" />
+              <img src="./images/bpjs.png" class="work__image" alt="BPJS Project" />
             </div>
           </div>
 
-          <!-- Transcosmos Indonesia -->
-          <div class="work__box">
+          <div class="work__box cloud">
             <div class="work__text">
-              <h3>Transcosmos Indonesia</h3>
-              <p>Web Administrator</p>
+              <h3>Unified Enterprise Identity Gateway</h3>
+              <p>Security Architect (Portfolio)</p>
               <ul class="work__list">
-                <li>Analysed website traffic and user engagement metrics to inform content strategies and improvements.</li>
-                <li>Increased accessibility and usability of website interfaces with responsive and user-friendly designs.</li>
-                <li>Led website redesign projects, improving user experience and aesthetics.</li>
-                <li>Customised layouts and collaborated with designers to enhance visuals.</li>
-                <li>Maintained backups and disaster recovery procedures.</li>
-                <li>Streamlined patch development, upgrades and change management.</li>
-                <li>Created documentation, policies and user instructions.</li>
-                <li>Mass-produced landing pages for campaigns.</li>
+                <li>Centralized auth for 15+ apps using Azure AD and OIDC[cite: 18].</li>
+                <li>Custom .NET 8 middleware for fine-grained RBAC[cite: 16].</li>
+                <li>Integrated MFA and conditional access policies.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/TCID.png" class="work__image" alt="Transcosmos Indonesia Project" />
+              <img src="./images/iam-proxy.png" class="work__image" alt="IAM Proxy" />
             </div>
           </div>
 
-          <!-- Freelancer -->
-          <div class="work__box">
+          <div class="work__box realtime">
             <div class="work__text">
-              <h3>Freelancer</h3>
-              <p>Web Programmer / Full Stack Developer</p>
+              <h3>Omni-Channel Logistics & WMS</h3>
+              <p>Senior Backend Developer (Portfolio)</p>
               <ul class="work__list">
-                <li>Built responsive web interfaces with Angular/React and dynamic UI features.</li>
-                <li>Developed ASP.NET Core APIs integrated with SQL Server.</li>
-                <li>Created cross-platform mobile apps (React Native, Android/iOS) with secure authentication and real-time sync.</li>
-                <li>Fixed bugs, enhanced features, and delivered client-ready solutions.</li>
+                <li>Handled 10k+ SKU updates per minute with .NET 8 Microservices.</li>
+                <li>Implemented SignalR for live inventory tracking and RabbitMQ for queuing.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/freelancer.png" class="work__image" alt="Freelancer Projects" />
+              <img src="./images/logistics-wms.png" class="work__image" alt="Logistics WMS" />
             </div>
           </div>
 
-          <!-- AL Group Creative -->
-          <div class="work__box">
+          <div class="work__box realtime">
             <div class="work__text">
-              <h3>AL Group Creative</h3>
-              <p>Full Stack Developer</p>
+              <h3>High-Performance Payment Gateway</h3>
+              <p>Fintech Developer (Portfolio)</p>
               <ul class="work__list">
-                <li>Planned websites and applications to best showcase multimedia.</li>
-                <li>Optimised visuals and information processing by allocating space strategically.</li>
-                <li>Boosted performance via code refactoring and caching mechanisms.</li>
-                <li>Created innovative websites with animations, audio and video displays.</li>
-                <li>Extensive TypeScript usage for scalability and maintainability.</li>
+                <li>PCI-compliant middleware connecting 5+ global payment gateways.</li>
+                <li>Automated bank statement reconciliation engine.</li>
+                <li>Idempotent API design to prevent duplicate transactions.</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/ALgroup.png" class="work__image" alt="AL Group Creative Project" />
+              <img src="./images/payment-gateway.png" class="work__image" alt="Payment Gateway" />
+            </div>
+          </div>
+
+          <div class="work__box cloud">
+            <div class="work__text">
+              <h3>DevOps Compliance & Security Monitor</h3>
+              <p>Senior DevOps (Portfolio)</p>
+              <ul class="work__list">
+                <li>Audited 100+ repos for secrets using GitHub Actions and Sumo Logic[cite: 18, 21].</li>
+                <li>Built custom Go-based CLI for pre-commit security checks.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/devops-tool.png" class="work__image" alt="DevOps Monitor" />
+            </div>
+          </div>
+
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>AI-Tagged Digital Asset Management</h3>
+              <p>Full Stack Developer (Portfolio)</p>
+              <ul class="work__list">
+                <li>Automated image tagging using AI and ElasticSearch retrieval.</li>
+                <li>Supports chunked file uploads up to 5GB using .NET 8.</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/dam-system.png" class="work__image" alt="DAM System" />
             </div>
           </div>
 
@@ -199,80 +271,69 @@
       </div>
     </section>
 
-    <!-- ***** About ***** -->
-
     <section class="about" id="about">
-  <div class="row">
-    <h2>About Me</h2>
-    <div class="about__content">
-      <div class="about__text">
-        <p>
-          I am a <strong>Full Stack Developer</strong> specializing in building scalable, high-performance applications using <strong>.NET 8 (ASP.NET Core), React 18, and TypeScript</strong>. 
-          I have a proven track record in developing enterprise-level systems, including <strong>Vendor Performance Management (VPMS)</strong> with <strong>Clean Architecture</strong> and serverless deployments on <strong>AWS Lambda</strong>.
-        </p>
-        <p>
-          Beyond development, I have extensive experience in <strong>Mass Migration (Mass-production)</strong> and managing large-scale health service systems at BPJS Kesehatan. 
-          I am passionate about <strong>Cloud Infrastructure (AWS, Azure AD)</strong>, database optimization, and delivering clean, maintainable code. 
-          My goal is to bridge complex business requirements with innovative, user-centric technical solutions.
-        </p>
-        <a href="./images/Anri Nobel_CV.pdf" class="btn">My Resume</a>
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I am a <strong>Senior Full Stack Developer</strong> with over 8 years of experience [cite: 5] specializing in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>[cite: 16, 17, 18].
+              I graduated from <strong>UNIKOM</strong> in 2020 and have built systems for major institutions like BPJS Kesehatan[cite: 9, 14].
+            </p>
+            <p>
+              My expertise lies in implementing <strong>Clean Architecture</strong>, serverless deployments on <strong>AWS</strong>, and secure identity management with <strong>Azure AD</strong>.
+            </p>
+            <a href="./images/CV_Anri_Nobel_Ibrahim.pdf" class="btn">My Resume</a>
+          </div>
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/AnriNobel.jpg" alt="Anri Nobel" width="500px" />
+          </div>
+        </div>
       </div>
-
-      <div class="about__photo-container">
-        <img class="about__photo" src="./images/AnriNobel.jpg" alt="Anri Nobel" width="500px" height="550px" />
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
   </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website or system?  
-          Need a consultation about development or database optimization?  
-          Or simply want to collaborate on exciting projects?  
-          Feel free to reach out to me, and I’ll get back as soon as possible. 😊
-        </p>
-        <a href="mailto:anri.nobel@gmail.com" class="btn">anri.nobel@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
 
   <footer role="contentinfo" class="footer">
     <div class="row">
       <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/AnriNobel" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/AnriNobel" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/anrinobel/" title="Link to Linkedin Profile">
-            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
+        <li class="footer__social-link-item"><a href="https://github.com/AnriNobel"><img src="./images/github.svg" class="footer__social-image" alt="Github"></a></li>
+        <li class="footer__social-link-item"><a href="https://www.linkedin.com/in/anrinobel/"><img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin"></a></li>
       </ul>
-      <p>
-        &copy; 2025 - Anri Nobel.
-      </p>
+      <p>&copy; 2026 - Anri Nobel Ibrahim.</p>
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
+  <script>
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("work__box");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        x[i].classList.add("hidden");
+        if (x[i].className.indexOf(c) > -1) {
+          x[i].classList.remove("hidden");
+        }
+      }
+      
+      // Update active button
+      var btns = document.getElementsByClassName("filter-btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove("active");
+      }
+      event.currentTarget.classList.add("active");
+    }
+
+    // Scroll back to top functionality
+    window.addEventListener("scroll", () => {
+      const btt = document.querySelector(".back-to-top");
+      if (window.scrollY > 700) {
+        btt.style.visibility = "visible";
+        btt.style.opacity = 1;
+      } else {
+        btt.style.visibility = "hidden";
+        btt.style.opacity = 0;
+      }
+    });
+  </script>
 </body>
 </html>
