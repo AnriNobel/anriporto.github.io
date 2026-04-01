@@ -81,6 +81,30 @@
     .work__box.hidden {
       display: none;
     }
+
+    /* Contact Form Styles */
+    .contact__form {
+      display: grid;
+      gap: 2rem;
+      max-width: 600px;
+      margin-top: 3rem;
+    }
+    .form__group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form__input, .form__textarea {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: white;
+      padding: 1.5rem;
+      font-family: inherit;
+      border-radius: 4px;
+    }
+    .form__input:focus, .form__textarea:focus {
+      outline: none;
+      border-color: #ff3258;
+    }
   </style>
 </head>
 
@@ -122,12 +146,12 @@
           <div class="work__box enterprise">
             <div class="work__text">
               <h3>MahaDasha Group - VPMS</h3>
-              <p>Full Stack Developer (2025)</p>
+              <p>Full Stack Developer (2025 - Present)</p>
               <ul class="work__list">
-                <li>Architected Vendor Performance Management System using .NET 8 Clean Architecture[cite: 9, 54].</li>
-                <li>Built React 18 SPA with TypeScript, Zustand, and React Query[cite: 9].</li>
-                <li>Deployed serverless backend via AWS Lambda and secure S3 storage[cite: 9, 55].</li>
-                <li>Integrated Azure AD and developed custom PDF reporting with digital signatures[cite: 9, 55].</li>
+                <li>Architected Vendor Performance Management System using .NET 8 Clean Architecture.</li>
+                <li>Built React 18 SPA with TypeScript, Zustand, and React Query.</li>
+                <li>Deployed serverless backend via AWS Lambda and secure S3 storage.</li>
+                <li>Integrated Azure AD and developed custom PDF reporting with digital signatures.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -140,9 +164,9 @@
               <h3>BPJS Kesehatan</h3>
               <p>Programmer (2025)</p>
               <ul class="work__list">
-                <li>Developed health service management web apps using ASP.NET Core and Angular[cite: 9, 65].</li>
-                <li>Implemented Entity Framework Core for SQL Server management[cite: 9, 66].</li>
-                <li>Built secure authentication and authorization using JWT[cite: 9, 66].</li>
+                <li>Developed health service management web apps using ASP.NET Core and Angular.</li>
+                <li>Implemented Entity Framework Core for structured database management.</li>
+                <li>Built secure authentication and authorization features using JWT.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -170,9 +194,9 @@
               <h3>Transcosmos Indonesia</h3>
               <p>Web Administrator</p>
               <ul class="work__list">
-                <li>Analysed website traffic via Google Analytics to inform content strategies[cite: 32].</li>
-                <li>Led website redesign projects and responsive interface development[cite: 33].</li>
-                <li>Managed application backups and disaster recovery procedures[cite: 35].</li>
+                <li>Analysed website traffic via Google Analytics to inform content strategies.</li>
+                <li>Led website redesign projects and responsive interface development.</li>
+                <li>Managed application backups and disaster recovery procedures.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -200,9 +224,9 @@
               <h3>Independent Freelancer</h3>
               <p>Full Stack Developer</p>
               <ul class="work__list">
-                <li>Built responsive web interfaces with Angular/React and dynamic UI[cite: 41].</li>
-                <li>Developed ASP.NET Core APIs integrated with SQL Server[cite: 42].</li>
-                <li>Created cross-platform mobile apps using React Native (Android/iOS)[cite: 43].</li>
+                <li>Built responsive web interfaces with Angular/React and dynamic UI.</li>
+                <li>Developed ASP.NET Core APIs integrated with SQL Server.</li>
+                <li>Created cross-platform mobile apps using React Native (Android/iOS).</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -229,9 +253,9 @@
               <h3>AL Group Creative</h3>
               <p>Full Stack Developer</p>
               <ul class="work__list">
-                <li>Planned websites to showcase multimedia with animations and audio[cite: 48, 52].</li>
-                <li>Boosted performance via code refactoring and caching mechanisms[cite: 48].</li>
-                <li>Extensive TypeScript usage for scalability and maintainability[cite: 48].</li>
+                <li>Planned websites to showcase multimedia with animations and audio.</li>
+                <li>Boosted performance via code refactoring and caching mechanisms.</li>
+                <li>Extensive TypeScript usage for scalability and maintainability.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -239,14 +263,14 @@
             </div>
           </div>
 
-          <div class="work__box enterprise">
+          <div class="work__box senior-portfolio">
             <div class="work__text">
               <h3>E-Commerce Backend API</h3>
-              <p>Project Portfolio [cite: 69]</p>
+              <p>Project Portfolio</p>
               <ul class="work__list">
-                <li>Developed REST API for product management and order processing[cite: 71, 72].</li>
-                <li>Integrated PostgreSQL and Redis for performance optimization[cite: 70].</li>
-                <li>Implemented secure payment gateway integration[cite: 73].</li>
+                <li>Developed REST API for product management and order processing.</li>
+                <li>Integrated PostgreSQL and Redis for performance optimization.</li>
+                <li>Implemented secure payment gateway integration.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -267,7 +291,6 @@
               <img src="./images/iam-proxy.png" class="work__image" alt="IAM Proxy" />
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -278,16 +301,43 @@
         <div class="about__content">
           <div class="about__text">
             <p>
-              I am a <strong>Senior Full Stack Developer</strong> with over 8 years of experience specializing in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>.
-              I graduated from <strong>UNIKOM</strong> in 2020 with a degree in Informatics Engineering[cite: 14].
+              I am a <strong>Senior Full Stack Developer</strong> with over 8 years of experience specializing in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>. 
+              I graduated from <strong>Universitas Komputer Indonesia (UNIKOM)</strong> in 2020.
             </p>
             <p>
-              My expertise lies in implementing <strong>Clean Architecture</strong>, serverless deployments on <strong>AWS</strong>, and secure identity management with <strong>Azure AD</strong>.
+              My expertise lies in implementing <strong>Clean Architecture</strong>, serverless deployments on <strong>AWS Lambda</strong>, and secure identity management with <strong>Azure AD</strong>.
             </p>
             <a href="./images/CV_Anri_Nobel_Ibrahim.pdf" class="btn">My Resume</a>
           </div>
           <div class="about__photo-container">
             <img class="about__photo" src="./images/AnriNobel.jpg" alt="Anri Nobel" width="500px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Ready to scale your next enterprise application or need a consultation on .NET architecture? 
+            Feel free to reach out. I'm always open to discussing new projects or creative ideas.
+          </p>
+          <form class="contact__form" action="https://formspree.io/f/your-id" method="POST">
+            <div class="form__group">
+              <input type="text" name="name" class="form__input" placeholder="Your Name" required>
+            </div>
+            <div class="form__group">
+              <input type="email" name="email" class="form__input" placeholder="Your Email" required>
+            </div>
+            <div class="form__group">
+              <textarea name="message" class="form__textarea" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--pink">Send Message</button>
+          </form>
+          <div style="margin-top: 2rem;">
+            <a href="mailto:anri.nobel@gmail.com" class="link__text">anri.nobel@gmail.com</a>
           </div>
         </div>
       </div>
@@ -315,7 +365,6 @@
           x[i].classList.remove("hidden");
         }
       }
-      
       var btns = document.getElementsByClassName("filter-btn");
       for (var i = 0; i < btns.length; i++) {
         btns[i].classList.remove("active");
