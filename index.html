@@ -113,9 +113,9 @@
         
         <div class="filter-container">
           <button class="filter-btn active" onclick="filterSelection('all')">All Projects</button>
-          <button class="filter-btn" onclick="filterSelection('enterprise')">Enterprise/SaaS</button>
-          <button class="filter-btn" onclick="filterSelection('cloud')">Cloud/DevOps</button>
-          <button class="filter-btn" onclick="filterSelection('realtime')">Real-time/Fintech</button>
+          <button class="filter-btn" onclick="filterSelection('enterprise')">Enterprise/Real Work</button>
+          <button class="filter-btn" onclick="filterSelection('senior-portfolio')">Senior Portfolio</button>
+          <button class="filter-btn" onclick="filterSelection('freelance')">Freelance & Creative</button>
         </div>
 
         <div class="work__boxes">
@@ -124,10 +124,10 @@
               <h3>MahaDasha Group - VPMS</h3>
               <p>Full Stack Developer (2025)</p>
               <ul class="work__list">
-                <li>Developed a Vendor Performance Management System (VPMS) using .NET 8 with Clean Architecture[cite: 9, 54].</li>
-                <li>Built a modern SPA frontend using React 18, TypeScript, and TailwindCSS[cite: 9, 55].</li>
-                <li>Implemented serverless backend via AWS Lambda and S3 for secure storage[cite: 9, 55].</li>
-                <li>Integrated Azure AD for secure JWT-based authentication[cite: 9, 55].</li>
+                <li>Architected Vendor Performance Management System using .NET 8 Clean Architecture[cite: 9, 54].</li>
+                <li>Built React 18 SPA with TypeScript, Zustand, and React Query[cite: 9].</li>
+                <li>Deployed serverless backend via AWS Lambda and secure S3 storage[cite: 9, 55].</li>
+                <li>Integrated Azure AD and developed custom PDF reporting with digital signatures[cite: 9, 55].</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -137,12 +137,27 @@
 
           <div class="work__box enterprise">
             <div class="work__text">
+              <h3>BPJS Kesehatan</h3>
+              <p>Programmer (2025)</p>
+              <ul class="work__list">
+                <li>Developed health service management web apps using ASP.NET Core and Angular[cite: 9, 65].</li>
+                <li>Implemented Entity Framework Core for SQL Server management[cite: 9, 66].</li>
+                <li>Built secure authentication and authorization using JWT[cite: 9, 66].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/bpjs.png" class="work__image" alt="BPJS Project" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
+            <div class="work__text">
               <h3>Enterprise SaaS Project Engine</h3>
               <p>Senior Architect (Portfolio)</p>
               <ul class="work__list">
                 <li>Implemented "Separate Schema per Tenant" strategy for 100% data isolation.</li>
-                <li>Architected using .NET 8 following Clean Architecture and DDD principles[cite: 5, 16].</li>
-                <li>Reduced API latency by 40% using Redis distributed caching[cite: 19].</li>
+                <li>Architected using .NET 8 following Clean Architecture and DDD principles.</li>
+                <li>Reduced API latency by 40% using Redis distributed caching.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -150,13 +165,28 @@
             </div>
           </div>
 
-          <div class="work__box realtime">
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>Transcosmos Indonesia</h3>
+              <p>Web Administrator</p>
+              <ul class="work__list">
+                <li>Analysed website traffic via Google Analytics to inform content strategies[cite: 32].</li>
+                <li>Led website redesign projects and responsive interface development[cite: 33].</li>
+                <li>Managed application backups and disaster recovery procedures[cite: 35].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/TCID.png" class="work__image" alt="Transcosmos Project" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
             <div class="work__text">
               <h3>AI-Driven Financial Fraud Monitor</h3>
               <p>Solutions Architect (Portfolio)</p>
               <ul class="work__list">
                 <li>Integrated ASP.NET Core with Python-based ML services for real-time detection.</li>
-                <li>Utilized AWS Lambda for event-driven processing of transaction logs[cite: 18].</li>
+                <li>Utilized AWS Lambda for event-driven processing of transaction logs.</li>
                 <li>Implemented Circuit Breaker patterns with Polly for 99.9% availability.</li>
               </ul>
             </div>
@@ -165,14 +195,28 @@
             </div>
           </div>
 
-          <div class="work__box cloud">
+          <div class="work__box freelance">
+            <div class="work__text">
+              <h3>Independent Freelancer</h3>
+              <p>Full Stack Developer</p>
+              <ul class="work__list">
+                <li>Built responsive web interfaces with Angular/React and dynamic UI[cite: 41].</li>
+                <li>Developed ASP.NET Core APIs integrated with SQL Server[cite: 42].</li>
+                <li>Created cross-platform mobile apps using React Native (Android/iOS)[cite: 43].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/freelancer.png" class="work__image" alt="Freelancer Projects" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
             <div class="work__text">
               <h3>Cloud-Native Video Processing Engine</h3>
               <p>Cloud Engineer (Portfolio)</p>
               <ul class="work__list">
-                <li>Built serverless media pipeline using AWS Lambda and S3 Trigger events[cite: 18].</li>
+                <li>Built serverless media pipeline using AWS Lambda and S3 Trigger events.</li>
                 <li>Secured content delivery using CloudFront Signed URLs and OAI.</li>
-                <li>Automated multi-resolution transcoding for enterprise assets.</li>
               </ul>
             </div>
             <div class="work__image-box">
@@ -180,90 +224,47 @@
             </div>
           </div>
 
-          <div class="work__box enterprise">
+          <div class="work__box freelance">
             <div class="work__text">
-              <h3>BPJS Kesehatan</h3>
-              <p>Programmer (2025)</p>
+              <h3>AL Group Creative</h3>
+              <p>Full Stack Developer</p>
               <ul class="work__list">
-                <li>Developed health service management web apps using ASP.NET Core and Angular[cite: 9, 66].</li>
-                <li>Implemented Entity Framework Core for SQL Server management[cite: 9, 66].</li>
-                <li>Optimized database queries, improving reliability and performance[cite: 9, 68].</li>
+                <li>Planned websites to showcase multimedia with animations and audio[cite: 48, 52].</li>
+                <li>Boosted performance via code refactoring and caching mechanisms[cite: 48].</li>
+                <li>Extensive TypeScript usage for scalability and maintainability[cite: 48].</li>
               </ul>
             </div>
             <div class="work__image-box">
-              <img src="./images/bpjs.png" class="work__image" alt="BPJS Project" />
+              <img src="./images/ALgroup.png" class="work__image" alt="AL Group Project" />
             </div>
           </div>
 
-          <div class="work__box cloud">
+          <div class="work__box enterprise">
+            <div class="work__text">
+              <h3>E-Commerce Backend API</h3>
+              <p>Project Portfolio [cite: 69]</p>
+              <ul class="work__list">
+                <li>Developed REST API for product management and order processing[cite: 71, 72].</li>
+                <li>Integrated PostgreSQL and Redis for performance optimization[cite: 70].</li>
+                <li>Implemented secure payment gateway integration[cite: 73].</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/ecommerce-api.png" class="work__image" alt="E-commerce API" />
+            </div>
+          </div>
+
+          <div class="work__box senior-portfolio">
             <div class="work__text">
               <h3>Unified Enterprise Identity Gateway</h3>
               <p>Security Architect (Portfolio)</p>
               <ul class="work__list">
-                <li>Centralized auth for 15+ apps using Azure AD and OIDC[cite: 18].</li>
-                <li>Custom .NET 8 middleware for fine-grained RBAC[cite: 16].</li>
-                <li>Integrated MFA and conditional access policies.</li>
+                <li>Centralized auth for 15+ apps using Azure AD and OIDC.</li>
+                <li>Custom .NET 8 middleware for fine-grained RBAC.</li>
               </ul>
             </div>
             <div class="work__image-box">
               <img src="./images/iam-proxy.png" class="work__image" alt="IAM Proxy" />
-            </div>
-          </div>
-
-          <div class="work__box realtime">
-            <div class="work__text">
-              <h3>Omni-Channel Logistics & WMS</h3>
-              <p>Senior Backend Developer (Portfolio)</p>
-              <ul class="work__list">
-                <li>Handled 10k+ SKU updates per minute with .NET 8 Microservices.</li>
-                <li>Implemented SignalR for live inventory tracking and RabbitMQ for queuing.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/logistics-wms.png" class="work__image" alt="Logistics WMS" />
-            </div>
-          </div>
-
-          <div class="work__box realtime">
-            <div class="work__text">
-              <h3>High-Performance Payment Gateway</h3>
-              <p>Fintech Developer (Portfolio)</p>
-              <ul class="work__list">
-                <li>PCI-compliant middleware connecting 5+ global payment gateways.</li>
-                <li>Automated bank statement reconciliation engine.</li>
-                <li>Idempotent API design to prevent duplicate transactions.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/payment-gateway.png" class="work__image" alt="Payment Gateway" />
-            </div>
-          </div>
-
-          <div class="work__box cloud">
-            <div class="work__text">
-              <h3>DevOps Compliance & Security Monitor</h3>
-              <p>Senior DevOps (Portfolio)</p>
-              <ul class="work__list">
-                <li>Audited 100+ repos for secrets using GitHub Actions and Sumo Logic[cite: 18, 21].</li>
-                <li>Built custom Go-based CLI for pre-commit security checks.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/devops-tool.png" class="work__image" alt="DevOps Monitor" />
-            </div>
-          </div>
-
-          <div class="work__box enterprise">
-            <div class="work__text">
-              <h3>AI-Tagged Digital Asset Management</h3>
-              <p>Full Stack Developer (Portfolio)</p>
-              <ul class="work__list">
-                <li>Automated image tagging using AI and ElasticSearch retrieval.</li>
-                <li>Supports chunked file uploads up to 5GB using .NET 8.</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/dam-system.png" class="work__image" alt="DAM System" />
             </div>
           </div>
 
@@ -277,8 +278,8 @@
         <div class="about__content">
           <div class="about__text">
             <p>
-              I am a <strong>Senior Full Stack Developer</strong> with over 8 years of experience [cite: 5] specializing in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>[cite: 16, 17, 18].
-              I graduated from <strong>UNIKOM</strong> in 2020 and have built systems for major institutions like BPJS Kesehatan[cite: 9, 14].
+              I am a <strong>Senior Full Stack Developer</strong> with over 8 years of experience specializing in <strong>.NET 8, React 18, and Cloud Infrastructure</strong>.
+              I graduated from <strong>UNIKOM</strong> in 2020 with a degree in Informatics Engineering[cite: 14].
             </p>
             <p>
               My expertise lies in implementing <strong>Clean Architecture</strong>, serverless deployments on <strong>AWS</strong>, and secure identity management with <strong>Azure AD</strong>.
@@ -315,25 +316,12 @@
         }
       }
       
-      // Update active button
       var btns = document.getElementsByClassName("filter-btn");
       for (var i = 0; i < btns.length; i++) {
         btns[i].classList.remove("active");
       }
       event.currentTarget.classList.add("active");
     }
-
-    // Scroll back to top functionality
-    window.addEventListener("scroll", () => {
-      const btt = document.querySelector(".back-to-top");
-      if (window.scrollY > 700) {
-        btt.style.visibility = "visible";
-        btt.style.opacity = 1;
-      } else {
-        btt.style.visibility = "hidden";
-        btt.style.opacity = 0;
-      }
-    });
   </script>
 </body>
 </html>
